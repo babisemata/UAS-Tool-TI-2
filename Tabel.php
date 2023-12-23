@@ -22,6 +22,7 @@ if (isset($_GET['NIMa'])) {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -110,6 +111,7 @@ if (isset($_GET['NIMa'])) {
                                         <input type="hidden" name="id_mahasiswa" value="<?php echo $data['NIM']; ?>">
                                         <a href="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>?NIMa=<?php echo $data['NIM']; ?>" class="btn btn-danger" role="button">Delete</a>
                                     </form>
+                                    <a href="Edit.php?NIMa=<?php echo $data['NIM']; ?>" class="btn btn-danger">Ubah</a>
                                 </td>
                             </tr>
                             <?php 
